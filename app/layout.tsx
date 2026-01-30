@@ -8,8 +8,9 @@ import Sidebar from "@/components/layout/Sidebar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MindPulse",
-  description: "AI-Powered Well-being Assessment",
+  title: "MindPulse | AI-Powered Biofeedback Platform",
+  description: "Monitor stress in real-time with MindConnect. AI-driven insights for better mental well-being.",
+  keywords: "biofeedback, stress monitoring, mental health, AI assessment, GSR sensor",
 };
 
 export default function RootLayout({
