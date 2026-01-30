@@ -474,13 +474,7 @@ Be empathetic, professional, and provide actionable advice. Keep responses conci
                 </div>
 
                 <div className="flex items-center gap-2 flex-wrap">
-                    {/* USB Connect Button */}
-                    <button
-                        onClick={isConnected ? disconnectSerial : connectSerial}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-xl font-bold transition-all shadow-md text-sm ${isConnected ? 'bg-indigo-100 text-indigo-700 hover:bg-indigo-200' : 'bg-slate-800 text-white hover:bg-slate-700'}`}
-                    >
-                        {isConnected ? <><Settings2 size={16} /> Connected</> : <><Zap size={16} /> Connect</>}
-                    </button>
+
 
                     {/* Analyze Button */}
                     <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-slate-200 shadow-sm">
@@ -965,8 +959,8 @@ Be empathetic, professional, and provide actionable advice. Keep responses conci
                             <motion.div
                                 animate={breathingPhase === "inhale" ? { scale: 1.2 } : breathingPhase === "exhale" ? { scale: 0.8 } : { scale: 1 }}
                                 className={`w-40 h-40 mx-auto rounded-full flex items-center justify-center text-white text-2xl font-bold mb-8 transition-colors ${breathingPhase === "inhale" ? "bg-blue-500" :
-                                        breathingPhase === "hold" ? "bg-yellow-500" :
-                                            "bg-green-500"
+                                    breathingPhase === "hold" ? "bg-yellow-500" :
+                                        "bg-green-500"
                                     }`}
                             >
                                 {breathingPhase === "inhale" ? "INHALE" :
@@ -1029,8 +1023,8 @@ Be empathetic, professional, and provide actionable advice. Keep responses conci
                                     >
                                         <div
                                             className={`max-w-xs lg:max-w-md px-4 py-3 rounded-2xl ${msg.role === "user"
-                                                    ? "bg-indigo-500 text-white rounded-br-none"
-                                                    : "bg-white text-slate-800 border-2 border-slate-200 rounded-bl-none"
+                                                ? "bg-indigo-500 text-white rounded-br-none"
+                                                : "bg-white text-slate-800 border-2 border-slate-200 rounded-bl-none"
                                                 }`}
                                         >
                                             <p className="text-sm leading-relaxed">{msg.content}</p>
